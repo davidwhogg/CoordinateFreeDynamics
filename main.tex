@@ -1,0 +1,73 @@
+\documentclass{article}
+
+% typesetting
+\usepackage[letterpaper, textheight=9.0in, textwidth=5.2in]{geometry}
+\usepackage{setspace}
+\setstretch{1.08}
+\usepackage{fancyhdr}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{3.0ex}\addtolength{\topmargin}{-0.5\headheight} % make room for headers
+\setlength{\headsep}{3.0ex}\addtolength{\topmargin}{-0.5\headsep}
+\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0.0pt}
+\fancyhf{}
+\fancyhead[L]{\sffamily Hogg / Making stellar dynamics coordinate-free}
+\fancyhead[R]{\sffamily\thepage}
+\sloppy\sloppypar\raggedbottom\frenchspacing
+\newcommand{\documentname}{\textsl{white paper}}
+\newcommand{\sectionname}{Section}
+\newcommand{\secref}[1]{\sectionname~\ref{#1}}
+
+\title{\bfseries Making the observational study of stellar dynamics truly coordinate-free}
+\author{David W. Hogg}
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}\noindent
+    General relativity is coordinate-free, and so is the Newtonian mechanics that flows therefrom.
+    At the same time, most studies of stellar dynamics---and all of the most important data sets in stellar dynamics---are explicitly tied to very particular coordinate systems.
+    Here we ask: What can be measured in a real observational study of stellar dynamics, given that we do not ever precisely know what coordinate systems are, say, Galactocentric, or (even close to) Newtonian?
+    In answering this question, the hope is that we will recover standard methods of stellar dynamics in some limits.
+    Even better, the hope is that we will identify families of precise measurements that aren't contaminated by any assumptions whatsoever about the coordinate system.
+\end{abstract}
+
+\section{Introduction}
+A lot of work has gone into understanding the position and velocity (or rest frame) of the Galactic Center, and the orientation, midplane, and circular velocity speed of the Milky Way disk.
+Neither of these things is well defined, of course, because the Milky Way is a dynamical system, residing in an invisible and also dynamical dark-matter halo, neither of which is in equilibrium (either theoretically, or empirically).
+Because everything evolves on orbital timescales, there is not even any separation of timescales to permit some separation of a Galaxy rest frame from the evolving halo, and indeed we expect that different parts of the Milky Way are displaced, moving, and accelerating differentially with respect to different parts of the halo.
+The situation is maximally bad.
+
+The ESA \textsl{Gaia} Mission has put a lot of effort into identifying the best approximation it can find to a Newtonian reference frame and coordinate system.
+Indeed, the Mission considers the frame and the coordinate system to be the same project (which is debatable).
+The idea is to find the coordinate system in which the stars will evolve under a dynamics that is as close as possible to Newtonian dynamics, possibly with an additional criterion that the quasars not show any net rotation in their residual proper motions.
+Even if we take general relativity to be fully established and not in any way in doubt, these criteria might be in conflict, because there can be frame dragging, and because the more distant stars are being observed not now but on the past light cone.
+If we are even slightly wrong about general relativity on large scales, or the properties of the dark matter, things could be substantially more wrong.
+And besides, what does it mean to be ``as close as possible'' to Newtonian dynamics?
+
+Here I imagine a possible stellar dynamics that makes no such assumptions and creates no such fictions.
+What, in the domain of stellar dynamics, can be observed in a truly coordinate-free way?
+And what measurements can we make of forces, potentials, tides, and density (gravitational charge density) in a truly coordinate-free way?
+Do the answers to these questions help in any way in making precision measurements of the dark sector?
+
+In what follows I will assume that we have access to contemporary (that is, not fictitious) instrumentation, like that deployed by ESA in the \textsl{Gaia} spacecraft, or that deployed in projects like the \textsl{Sloan Digital Sky Surveys}.
+We will have access to imaging, photometry, astrometry, and spectroscopy over large fractions of (or the entirety of) the celestial sphere.
+I will assume also that we have contemporary (that is, not fictitious) time baselines, such that our observing programs are far shorter in time than any relevant Galactic dynamical time.
+We will not see any velocities change with time (at least not because of any Galactic-scale forces or tides).
+
+\section{\textsl{Gaia} without coordinates}
+Undeniably the most important data set in the contemporary study of stellar dynamics is the ESA \textsl{Gaia} Data Release 3 data (soon to be surpassed by Data Releases 4 and 5).
+Every star in a billion-star category has a measured apparent magnitude, celestial position, parallax, and proper motion.
+In addition many stars have low-resolution spectral information, from which many colors can be derived.
+Importantly for what follows, some have high-resolution spectral information, from which a radial velocity is derived.
+
+This data set is delivered in a coordinate system which is specified in a set of very technical papers.
+The celestial positions are given in a version of the RA and dec coordinate system on the celestial sphere at a particular barycentric time (the ``epoch'' HOGG IS THAT RIGHT?), the proper motions are given in terms of time derivatives of these coordinates, and the parallax is intended to be proportional to the inverse of the distance between the star and the barycenter at the epoch.
+The radial velocities are intended to be velocity differences between the star and the barycenter at the epoch, projected onto the line connecting the barycenter to the star at the epoch.
+
+What would it have looked like if the \textsl{Gaia} Collaboration had decided that it did not want to decide on a coordinate system?
+Could they have released the data in a useful form nonetheless?
+
+\end{document}
